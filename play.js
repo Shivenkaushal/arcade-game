@@ -13,7 +13,7 @@ class PLAY{
     }
     
     display() {
-        this.title.html("FRUIT CATCHER");
+        this.title.html("ARCADE GAME");
         this.title.position(350, 50);
         this.title.style('font-size', '70px');
         this.title.style('color', 'skyblue');

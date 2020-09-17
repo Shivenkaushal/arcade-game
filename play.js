@@ -5,6 +5,12 @@ class PLAY{
        this.greeting = createElement('h2');
        this.title = createElement('h2');
     }
+   hide() {
+        this.greeting.hide();
+        this.button.hide();
+        this.input.hide();
+        this.title.hide();
+    }
     
     display() {
         this.title.html("FRUIT CATCHER");
@@ -25,6 +31,7 @@ class PLAY{
             gameState = "play"
             this.input.hide();
             this.button.hide();
+            this.greeting.hide();
             this.title.hide();
          
         });

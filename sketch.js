@@ -31,7 +31,7 @@ function setup(){
     ground = createSprite(400,700,13000,50);
     ground.shapeColor = "green";
     ground.visible = false;
-
+intros=new PLAY();
     player = createSprite(250,600,5,5);
     player.addImage("player", player_img1);
     player.scale = 0.1;
@@ -60,11 +60,10 @@ function draw(){
    gameState="end"
   
  }
- if(gameState === "intro"){
-  intros=new PLAY();
-  intros.display();
- }
 
+  
+  intros.display();
+ 
     
     if(gameState === "play"){
         background(bg_img);
